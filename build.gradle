@@ -40,9 +40,16 @@ if (project.hasProperty('pushall') || project.hasProperty('EssentialPackonly')) 
 }
 
 dependencies {
-
+    implementation "com.mikepenz:iconics-core:3.2.3"
 }
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
 
+    }
+ }
 buildscript {
     repositories {
         jcenter()
